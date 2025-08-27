@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forklift Inspection</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; background: #f8f9fa; }
+    h1 { text-align: center; color: #333; }
+    h2 { background: #0056b3; color: #fff; padding: 10px; border-radius: 8px; }
+    .section { margin-bottom: 25px; padding: 15px; background: #fff; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+    label { display: block; margin-top: 10px; font-weight: bold; }
+    select, input, textarea { width: 100%; padding: 8px; margin-top: 5px; border: 1px solid #ccc; border-radius: 5px; }
+    button { background: #28a745; color: #fff; border: none; padding: 12px 18px; border-radius: 6px; cursor: pointer; font-size: 16px; width: 100%; }
+    button:hover { background: #218838; }
+  </style>
+</head>
+<body>
+  <h1>Forklift Inspection</h1>
+
+  <!-- Formspree Form -->
+  <form action="https://formspree.io/f/XXXXXXX" method="POST">
+    
+    <!-- TIRES -->
+    <div class="section">
+      <h2>Tires</h2>
+      <label>No gouges, chunking</label>
+      <select name="tires_gouges" required>
+        <option value="">Select...</option>
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+      </select>
+
+      <label>No bond failure</label>
+      <select name="tires_bond" required>
+        <option value="">Select...</option>
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+      </select>
+
+      <label>Adequate tread</label>
+      <select name="tires_tread" required>
+        <option value="">Select...</option>
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+      </select>
+    </div>
+
+    <!-- BATTERY -->
+    <div class="section">
+      <h2>Battery</h2>
+      <label>Assure the lid locks in place</label>
+      <select name="battery_lid" required>
+        <option value="">Select...</option>
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+      </select>
+
+      <label>Fully charged and correct water level</label>
+      <select name="battery_charge" required>
+        <option value="">Select...</option>
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+      </select>
+
+      <label>Installed properly</label>
+      <select name="battery_installed" required>
+        <option value="">Select...</option>
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+      </select>
+
+      <label>Gates properly installed</label>
+      <select name="battery_gates" required>
+        <option value="">Select...</option>
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+      </select>
+
+      <label>Emergency disconnect functions properly</label>
+      <select name="battery_disconnect" required>
+        <option value="">Select...</option>
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+      </select>
+    </div>
+
+    <!-- LIFT -->
+    <div class="section">
+      <h2>Lift / Lowering System</h2>
+      <label>No damage to chains, hoses, limit switches</label>
+      <select name="lift_damage" required>
+        <option value="">Select...</option>
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+      </select>
+    </div>
+
+    <!-- CONTROLS -->
+    <div class="section">
+      <h2>Controls</h2>
+      <label>Moves smoothly without binding</label>
+      <select name="controls_smooth" required>
+        <option value="">Select...</option>
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+      </select>
+
+      <label>Returns to neutral when released</label>
+      <select name="controls_neutral" required>
+        <option value="">Select...</option>
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+      </select>
+    </div>
+
+    <!-- GENERAL -->
+    <div class="section">
+      <h2>General</h2>
+      <label>Guards and covers installed</label>
+      <select name="general_guards" required>
+        <option value="">Select...</option>
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+      </select>
+
+      <label>Decals - Warning/Safety/Operational intact</label>
+      <select name="general_decals" required>
+        <option value="">Select...</option>
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+      </select>
+
+      <label>No oil drippings under vehicle</label>
+      <select name="general_oil" required>
+        <option value="">Select...</option>
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+      </select>
+    </div>
+
+    <!-- HORN -->
+    <div class="section">
+      <h2>Horn</h2>
+      <label>Works when button is depressed</label>
+      <select name="horn" required>
+        <option value="">Select...</option>
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+      </select>
+    </div>
+
+    <!-- STEERING -->
+    <div class="section">
+      <h2>Steering</h2>
+      <label>Smooth, without binding or excess play</label>
+      <select name="steering" required>
+        <option value="">Select...</option>
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+      </select>
+    </div>
+
+    <!-- SPEED CONTROL -->
+    <div class="section">
+      <h2>Directional / Speed Control</h2>
+      <label>Moves slowly without binding</label>
+      <select name="speed_smooth" required>
+        <option value="">Select...</option>
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+      </select>
+
+      <label>Returns to neutral when released</label>
+      <select name="speed_neutral" required>
+        <option value="">Select...</option>
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+      </select>
+    </div>
+
+    <!-- BRAKES -->
+    <div class="section">
+      <h2>Brakes</h2>
+      <label>Pedal moves freely without binding</label>
+      <select name="brakes_pedal" required>
+        <option value="">Select...</option>
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+      </select>
+
+      <label>Emergency brake functions properly</label>
+      <select name="brakes_emergency" required>
+        <option value="">Select...</option>
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+      </select>
+    </div>
+
+    <!-- SAFETY -->
+    <div class="section">
+      <h2>Safety</h2>
+      <label>All warning and working lights functioning</label>
+      <select name="safety_lights" required>
+        <option value="">Select...</option>
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+      </select>
+
+      <label>Seat belt functioning</label>
+      <select name="safety_seatbelt" required>
+        <option value="">Select...</option>
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+      </select>
+    </div>
+
+    <!-- METER READER -->
+    <div class="section">
+      <h2>Meter Reader</h2>
+      <input type="text" name="meter_reader" placeholder="Enter meter reader value" required>
+    </div>
+
+    <!-- NAME -->
+    <div class="section">
+      <h2>Name</h2>
+      <input type="text" name="name" placeholder="Enter your name" required>
+    </div>
+
+    <!-- COMMENTS -->
+    <div class="section">
+      <h2>Comments</h2>
+      <textarea name="comments" rows="4" placeholder="Enter any comments"></textarea>
+    </div>
+
+    <button type="submit">Submit Inspection</button>
+  </form>
+</body>
+</html>
